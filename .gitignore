@@ -1,0 +1,4 @@
+*jsonl
+*venv
+*env
+**__pycache__
