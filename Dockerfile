@@ -9,5 +9,7 @@ COPY . /python-docker
 
 ENV PYTHONPATH /python-docker
 
+EXPOSE 5000
+
 CMD ["bash"]
 #CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]

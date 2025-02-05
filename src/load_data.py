@@ -9,7 +9,7 @@ from config.config import (
 
 hf_dataset = load_dataset(HF_DATASET_PATH, "raw_review_All_Beauty", trust_remote_code=True)
 
-hf_dataset.save_to_disk(LOCAL_DATASET_PATH)
-
-for idx in range(0,5):
-    print(hf_dataset["full"][idx])
+print(type(hf_dataset))
+print(type(hf_dataset['full']))
+print(hf_dataset['full'][0])
+#hf_dataset.save_to_disk(LOCAL_DATASET_PATH)

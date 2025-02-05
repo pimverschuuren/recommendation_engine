@@ -1,9 +1,11 @@
 services:
   recommendation_app:
-    image: recommendation_app:latest
+    build: ./
     volumes:
       - ./:/python-docker
-    build:
-      context: .
     ports:
       - 5000:5000
+    stdin_open: true
+    tty: true 
+    expose:
+      - 5000

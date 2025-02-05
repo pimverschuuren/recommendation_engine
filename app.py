@@ -24,7 +24,7 @@ def get_recommendation():
         return jsonify({'error': str(e)}), 400
     
     # Save the user to the database, etc.
-    recommendation = request_input.input_text + "product"
+    recommendation = request_input.input_text + " product"
 
     recommendation_response = RecommendationResponse(
         recommendation = recommendation
